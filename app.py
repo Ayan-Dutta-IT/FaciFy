@@ -13,7 +13,7 @@ import zipfile
 def download_and_extract_database():
     if not os.path.exists("database"):
         print("⏳ Downloading student database...")
-        url = "https://drive.google.com/uc?id=1abcDEFghiJKLmnOPQRstuVWXYZ"
+        url = "https://drive.google.com/file/d/1BWhSZTnsw9CIAmkI7igh7wPemoyoSsDb/view?usp=sharing"
         output = "database.zip"
         gdown.download(url, output, quiet=False)
 

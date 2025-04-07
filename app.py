@@ -27,10 +27,10 @@ download_and_extract_database()
 
 
 # --- Configuration ---
-database_folder = r"D:\Project\project\db_images"
-attendance_folder = r"D:\Project\project\attendance"
-reference_images_folder = r"D:\Project\project\uploads"
-yolo_model = YOLO(r"D:/Project/project/yolo_objRecognition.pt")
+database_folder = "db_images"
+attendance_folder = "attendance"
+reference_images_folder = "uploads"
+yolo_model = YOLO("yolo_objRecognition.pt")
 
 os.makedirs(attendance_folder, exist_ok=True)
 

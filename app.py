@@ -7,6 +7,24 @@ from deepface import DeepFace
 from ultralytics import YOLO
 import csv
 import tempfile
+import gdown
+import zipfile
+
+def download_and_extract_database():
+    if not os.path.exists("database"):
+        print("⏳ Downloading student database...")
+        url = "https://drive.google.com/uc?id=1abcDEFghiJKLmnOPQRstuVWXYZ"
+        output = "database.zip"
+        gdown.download(url, output, quiet=False)
+
+        print("📦 Extracting...")
+        with zipfile.ZipFile(output, 'r') as zip_ref:
+            zip_ref.extractall(".")
+
+        print("✅ Database ready!")
+
+download_and_extract_database()
+
 
 # --- Configuration ---
 database_folder = r"D:\Project\project\db_images"

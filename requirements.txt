@@ -4,6 +4,6 @@ numpy
 gdown
 opencv-python-headless==4.8.0.76
 deepface==0.0.83
-tensorflow==2.11.0
+tensorflow-cpu==2.11.0
 protobuf==3.19.6
 ultralytics==8.1.0

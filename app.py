@@ -3,6 +3,7 @@ import cv2
 import numpy as np
 import os
 from PIL import Image
+import tensorflow as tf
 from deepface import DeepFace
 from ultralytics import YOLO
 import csv
